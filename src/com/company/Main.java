@@ -24,3 +24,4 @@ class HelloMain {
         System.out.printf("Hello%2d and %6s",8,"Hi!\n");
     }
 }
+class skda;lkds;k;sda

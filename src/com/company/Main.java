@@ -20,7 +20,7 @@ class TwoNumberSum {
 class HelloMain {
 
     public static void main(String[] args) {
-        System.out.printf("Hello%2d and %6s",8,"Hi!\n");
+        System.out.printf("Hello and %6s",8,"Hi!\n");
         System.out.printf("Hello%2d and %6s",8,"Hi!\n");
     }
 }

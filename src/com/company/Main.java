@@ -24,3 +24,13 @@ class HelloMain {
         System.out.printf("Hello%2d and %6s",8,"Hi!\n");
     }
 }
+class MAth0 {
+    public static void main(String[] args) {
+        double num1 = 12.51;
+        double num2 = 13.123;
+        double proizvod= num1 * num2;
+        double sum1= num1 + num2;
+        System.out.println(proizvod);
+        System.out.println(sum1);
+    }
+}

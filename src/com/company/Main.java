@@ -27,4 +27,13 @@ class HelloFormat {
         System.out.printf("Hi, Hi %2f\n",5.5568);
     }
 }
-class
+
+class ScannerNoImport {
+
+    public static void main(String[] args) {
+        java.util.Scanner in = new java.util.Scanner(System.in);
+        System.out.print("Enter a integer:");
+        int number= in.nextInt();
+        System.out.print("You have a integer "+ number);
+    }
+}

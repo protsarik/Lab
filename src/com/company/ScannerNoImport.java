@@ -7,5 +7,6 @@ public class ScannerNoImport {
         System.out.print("Enter a integer:");
         int number= in.nextInt();
         System.out.print("You have a integer "+ number);
+        System.out.print("You have a integer "+ number);
     }
 }

@@ -8,6 +8,6 @@ import static com.company.GameMain.COLS;
         for (int col=0;col<COLS;++col){
              }
         }
-    System.out.println(ROWS);
+    System.out.println(COLS);
         }
     }

@@ -24,7 +24,7 @@ class HelloFormat {
         System.out.printf("Hi, %s%4d\n","Hello",88);
         System.out.printf("Hello%d%4.2f\n",8,5.512);
         System.out.printf("Hi, %-80s&%3.3f\n","Hi",5.55996768);
-        System.out.printf("Hi, Hi %2f\n",5.5568);
+        System.out.printf("%2.2fHi, Hi \n",5.5568);
     }
 }
 

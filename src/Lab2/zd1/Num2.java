@@ -12,7 +12,12 @@ public class Num2 {
         System.out.print("Введи Z: ");
         double z = ves.nextDouble();
 
-        if (x>y){
-
+        if (x > y) {
+            System.out.println("Самый маленький это Y = " + y);
+        } else if (y > z) {
+            System.out.println("Самый маленький это Z = " + z);
+        } else if (z > x) {
+            System.out.println("Самый маленький это X = " + x);
         }
+    }
 }

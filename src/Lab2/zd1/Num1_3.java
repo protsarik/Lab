@@ -2,7 +2,7 @@ package Lab2.zd1;
 
 import java.util.Scanner;
 
-public class Num3 {
+public class Num1_3 {
     public static void main(String[] args) {
         Scanner ves = new Scanner(System.in);
         System.out.print("Введи месяц 2020 года: ");

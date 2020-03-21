@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.StrictMath.pow;
 
-public class Num1 {
+public class Num2_1 {
     public static void main(String[] args) {
         Scanner ves = new Scanner(System.in);
         System.out.print("начальная точка а: ");

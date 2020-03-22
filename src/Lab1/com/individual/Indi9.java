@@ -1,4 +1,4 @@
-package com.individual;
+package Lab1.com.individual;
 
 import java.util.Scanner;
 

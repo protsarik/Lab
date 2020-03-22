@@ -1,4 +1,4 @@
-package com.yyy.animal;
+package Lab1.com.yyy.animal;
 
 public class Cat {
     public String toString() {

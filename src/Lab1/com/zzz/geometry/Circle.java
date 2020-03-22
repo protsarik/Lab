@@ -1,4 +1,4 @@
-package com.zzz.geometry;
+package Lab1.com.zzz.geometry;
 
 public class  Circle{
     public String toString(){

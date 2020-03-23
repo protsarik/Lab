@@ -1,4 +1,4 @@
-package com.zzz.geometry;
+package Lab1.com.zzz.geometry;
 
 public class Cyclinder extends Circle{
     public String toString() {

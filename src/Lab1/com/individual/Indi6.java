@@ -1,4 +1,4 @@
-package com.individual;
+package Lab1.com.individual;
 
 public class Indi6 {
     public static void main(String[] args) {

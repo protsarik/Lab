@@ -1,6 +1,7 @@
-package com.company;
-import static com.company.GameMain.ROWS;
-import static com.company.GameMain.COLS;
+package Lab1.com.company;
+
+import static Lab1.com.company.GameMain.COLS;
+import static Lab1.com.company.GameMain.ROWS;
     public class GamePanel{
         public static void main(String[] args){
     /*int [][] score=int[ROWS][COLS];*/

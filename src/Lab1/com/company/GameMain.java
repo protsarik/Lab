@@ -1,4 +1,4 @@
-package com.company;
+package Lab1.com.company;
 
 public class GameMain   {
   public static int COLS=3;

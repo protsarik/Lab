@@ -7,6 +7,7 @@ public class Indi9 {
         Scanner w = new Scanner(System.in);
         System.out.println("vvedi x: ");
         double x = w.nextDouble();
+        System.out.println(x);
 
         double san = x * 100;
         double dume = x * 39.3700787;

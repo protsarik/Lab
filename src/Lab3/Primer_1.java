@@ -1,8 +1,12 @@
 package Lab3;
+
 import java.util.Scanner;
+
 public class Primer_1 {
-    public static void main(String[] args){
-        int num1; double num2; String str;
+    public static void main(String[] args) {
+        int num1;
+        double num2;
+        String str;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter an integer: ");
         num1 = in.nextInt();

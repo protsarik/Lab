@@ -13,8 +13,8 @@ public class Primer_1 {
         System.out.print("Enter a double: ");
         num2 = in.nextDouble();
         System.out.print("Enter a String: ");
-        str = in.next(); // чтение строки
+        str = in.next();
         System.out.printf("%s, Sum of %d & %2f is %2f%n", str, num1, num2, num1 + num2);
-        in.close();//закрыть поток ввода
+        in.close();
     }
 }

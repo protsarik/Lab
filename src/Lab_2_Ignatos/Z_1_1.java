@@ -8,6 +8,6 @@ public class Z_1_1 {
         Scanner per = new Scanner(System.in);
         System.out.print("VVedite x: ");
         double x = per.nextDouble();
-        System.out.println("y = " + ((x+9<0)? "Функция не определена" : sqrt(x+9)));
+        System.out.println("y = " + (((x+9)<0)? "Функция не определена" : sqrt(x+9)));
     }
 }

@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 public class Primer_3 {
     public static void main(String[] args) {
         try {
-            Scanner in = new Scanner(new File("test.in"));
+            Scanner in = new Scanner(new File("text.txt"));
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         }

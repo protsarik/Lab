@@ -7,7 +7,7 @@ public class Primer_2 {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter String with Space: ");
         String str = in.nextLine();
-        System.out.printf("%s%n", str);
+        System.out.printf("%s\n", str);
         in.close();
     }
 }

@@ -8,7 +8,7 @@ public class primer_1 {
         for(int i=0;i<count;i++){
             sum += marks[i];
         }
-        mean = (double)sum/count;
-        System.out.println("mean is %2f%n", mean);
+        double mean = sum/count;
+        System.out.printf("mean is %2f", mean);
     }
 }

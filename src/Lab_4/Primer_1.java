@@ -3,9 +3,9 @@ package Lab_4;
 public class Primer_1 {
     public static void main(String[] args) {
         // Объявление строк
-        String firstStr = "Текстовый текст";
+        String firstStr = "fxxjwexxwexxwdwx";
         String secondStr = new String("Текстовый текст");
-        //вычисление длины строки
+    /*    //вычисление длины строки
         System.out.println("Длина строки firstStr " + firstStr.length());
         //поиск подстроки в строке
         String findText = "текст";
@@ -17,10 +17,12 @@ public class Primer_1 {
         System.out.println("Строки firstStr и secondStr ");
         if (firstStr.equals(secondStr)) System.out.println("совпадают");
         else System.out.println("не совпадают");
-        // сколько раз встречается заданный символ в строке
+        // сколько раз встречается заданный символ в строке */
         int count = 0;
         for(int i=0; i<firstStr.length();i++){
-         if(firstStr.charAt(i) == 'е') count++;}
-        System.out.println("Символ е встречается в firstStr " + count + "раз");
+            if ((firstStr.charAt(i) == 'x') && (firstStr.charAt(i+1) == firstStr.charAt(i))) count++;
+        System.out.println("Count = " + count);
+        }
+        System.out.println("Символ xx встречается в firstStr " + count + " раз");
     }
 }

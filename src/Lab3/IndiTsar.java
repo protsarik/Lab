@@ -10,8 +10,8 @@ public class IndiTsar {
         double f2 = 0;
         double f1 = 0;
         try {
-            System.out.println("Выводим вещественные числа иp файла");
-            Scanner in = new Scanner(new File("src/Lab3/float.txt"));
+            System.out.println("Выводим вещественные числа из файла");
+            Scanner in = new Scanner(new File(args[0]));
             f1 = in.nextDouble();
             System.out.println("Файл найден");
             while (in.hasNext()) {

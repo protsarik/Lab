@@ -1,17 +1,18 @@
 package Lab1.com.individual;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class SrVes {
     public static void main(String[] args) {
-        Scanner ves = new Scanner(System.in);
-        System.out.print("VVedi ves X: ");
-        double vesX = ves.nextDouble();
-        System.out.print("VVedi ves Y: ");
-        double vesY = ves.nextDouble();
-        System.out.print("VVedi ves Z: ");
-        double vesZ = ves.nextDouble();
-
+        double vesX;
+        double vesY;
+        double vesZ;
+        String ves = JOptionPane.showInputDialog("Введите вес первого человека");
+        vesX = Double.parseDouble(ves);
+        ves = JOptionPane.showInputDialog("Введите вес второго человека");
+        vesY = Double.parseDouble(ves);
+        ves = JOptionPane.showInputDialog("Введите вес третьего человека");
+        vesZ = Double.parseDouble(ves);
         var vesP2 = vesY / 40;
         var vesP3 = vesZ / 16.38;
         double srZnPud = (vesX + vesP2 + vesP3) / 3;

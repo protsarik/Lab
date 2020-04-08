@@ -12,16 +12,16 @@ public class Num1_2 {
         System.out.print("Введи Z: ");
         double z = ves.nextDouble();
 
-        if (x > y) {
-            if (y < z)
-                System.out.println("Самый маленький это Y = " + y);
+        if (x < y) {
+            if (y > z)
+                System.out.println("Самый высокий это Y = " + y);
             else {
-                System.out.println("Самый маленький это Z = " + z);
+                System.out.println("Самый высокий это Z = " + z);
             }
-        } else if (z > x) {
-            System.out.println("Самый маленький это X = " + x);
+        } else if (z < x) {
+            System.out.println("Самый высокий это X = " + x);
         } else {
-            System.out.println("Самый маленький это Z = " + z);
+            System.out.println("Самый высокий это Z = " + z);
         }
     }
 }

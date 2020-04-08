@@ -1,0 +1,31 @@
+Index: src/Lab_4/Primer_1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Lab_4;\n\npublic class Primer_1 {\n    public static void main(String[] args) {\n        // Объявление строк\n        String firstStr = \"fxxjwexxwexxwdwx\";\n        String secondStr = new String(\"Текстовый текст\");\n    /*    //вычисление длины строки\n        System.out.println(\"Длина строки firstStr \" + firstStr.length());\n        //поиск подстроки в строке\n        String findText = \"текст\";\n        System.out.println(\"В строке firstStr \" + ((firstStr.indexOf(findText) > 0) ? \"есть\" : \"отсутствует\") + \"слово\" + findText);\n        //замена символа в строке\n        String newStr = firstStr.replace(\" \", \"+\");\n        System.out.println(\"Новая строка \" + newStr);\n        //сравнение строк\n        System.out.println(\"Строки firstStr и secondStr \");\n        if (firstStr.equals(secondStr)) System.out.println(\"совпадают\");\n        else System.out.println(\"не совпадают\");\n        // сколько раз встречается заданный символ в строке */\n        int count = 0;\n        for(int i=0; i<firstStr.length();i++){\n            if ((firstStr.charAt(i) == 'x') && (firstStr.charAt(i+1) == firstStr.charAt(i))) count++;\n        System.out.println(\"Count = \" + count);\n        }\n        System.out.println(\"Символ xx встречается в firstStr \" + count + \" раз\");\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Lab_4/Primer_1.java	(revision 5afb668d2ed7b513846c18410afda1d050de6fbd)
++++ src/Lab_4/Primer_1.java	(date 1586266571925)
+@@ -4,20 +4,7 @@
+     public static void main(String[] args) {
+         // Объявление строк
+         String firstStr = "fxxjwexxwexxwdwx";
+-        String secondStr = new String("Текстовый текст");
+-    /*    //вычисление длины строки
+-        System.out.println("Длина строки firstStr " + firstStr.length());
+-        //поиск подстроки в строке
+-        String findText = "текст";
+-        System.out.println("В строке firstStr " + ((firstStr.indexOf(findText) > 0) ? "есть" : "отсутствует") + "слово" + findText);
+-        //замена символа в строке
+-        String newStr = firstStr.replace(" ", "+");
+-        System.out.println("Новая строка " + newStr);
+-        //сравнение строк
+-        System.out.println("Строки firstStr и secondStr ");
+-        if (firstStr.equals(secondStr)) System.out.println("совпадают");
+-        else System.out.println("не совпадают");
+-        // сколько раз встречается заданный символ в строке */
++
+         int count = 0;
+         for(int i=0; i<firstStr.length();i++){
+             if ((firstStr.charAt(i) == 'x') && (firstStr.charAt(i+1) == firstStr.charAt(i))) count++;

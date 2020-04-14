@@ -1,6 +1,6 @@
 package Lab_5;
 
-public class Z_1_2 {
+public class p2 {
     public static void main(String[] args){
         String firstStr = "156204542301546201654475200";
         int n = firstStr.length();

@@ -1,12 +1,17 @@
 package Lab_5;
 
 public class p2 {
-    public static void main(String[] args){
-        String firstStr = "156204542301546201654475200";
-        int n = firstStr.length();
-        int count = 0;
-        for(int i=0; i<n;i++){
-            if(firstStr.charAt(i) == '0') count++;}
-        System.out.println("Количество 0 = " + count);
+    public static void main(String[] args) {
+        int array[][] = {
+                {180, 80},
+                {153, 53},
+                {192, 95}};
+        for (int[] innerArrayRost : array) {
+            for (int outArrayVes : innerArrayRost) {
+                if (outArrayVes - 100 == array[0][1]) {
+                    System.out.println(outArrayVes);
+                }
+            }
+        }
     }
-    }
+}

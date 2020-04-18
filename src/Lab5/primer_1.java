@@ -1,4 +1,4 @@
-package Lab_5;
+package Lab5;
 
 public class primer_1 {
     public static void main(String[] args){

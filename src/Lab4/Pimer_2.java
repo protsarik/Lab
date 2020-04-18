@@ -1,4 +1,4 @@
-package Lab_4;
+package Lab4;
 
 import java.util.Calendar;
 

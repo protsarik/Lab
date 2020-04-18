@@ -1,4 +1,4 @@
-package Lab_2_Ignatos.Lab_2_Lapts;
+package Lab2.Lab_2_Lapts;
 import java.util.Scanner;
 
 import static java.lang.Math.pow;

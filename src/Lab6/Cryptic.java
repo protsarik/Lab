@@ -100,8 +100,8 @@ public class Cryptic {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите номер метода (де-)шифрования");
-        System.out.println("A1-1-й алгоритм; А2-2-й алгоритм; 3-дешифровка");
+        System.out.println("Введите номер метода (де-)шифрования:");
+        System.out.println("1 -1-й алгоритм; 2 -2-й алгоритм; 3 -дешифровка.");
         int MethodCrypt = in.nextInt();
         String text = null;
 

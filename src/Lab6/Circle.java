@@ -6,16 +6,16 @@ public class Circle {
 //    написания программы вычисления длины окружности по заданному значению радиуса.
     private double radius;
 
-    public Circle(double r) {
-    radius=r;
+    public Circle() {
     }
 
     public double getRadius() {
         return this.radius;
     }
 
-    public void setRadius(double radius) {
+    public double setRadius(double radius) {
         this.radius = radius;
+        return radius;
     }
 
     public double getLength() {
@@ -24,7 +24,8 @@ public class Circle {
     }
 
     public static void main(String[] args) {
-        Circle c1 = new Circle(12.1);
+        Circle c1 = new Circle();
+        double r =  c1.setRadius(12.1);
         System.out.printf("Радиус равен:%2.2f", c1.getLength());
     }
 }

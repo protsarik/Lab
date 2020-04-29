@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+import static java.lang.Integer.valueOf;
+
 public class indi81 extends JFrame {
     private JButton button = new JButton("Решение");
     private JTextField input = new JTextField("", 5);
@@ -24,9 +26,11 @@ public class indi81 extends JFrame {
 
     class ButtonEventListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+            int text = Integer.valueOf(input.getText());
+            text = text + 9;
             String message = "";
             message += "Кнопка была нажата\n";
-            message += "Текст: " + input.getText() + "\n";
+            message += "Текст: " + text + "\n";
             JOptionPane.showMessageDialog(null, message, "Output",
                     JOptionPane.PLAIN_MESSAGE);
         }

@@ -127,4 +127,4 @@ public class Cryptic {
         }
         System.out.println("Итоговый текст: " + text);
     }
-}
+}                       

@@ -20,7 +20,7 @@ public class three_zero {
         for (int i = 0; i < n; i++) {
             if (name[i] < min) {
                 min = name[i];
-                i = z;
+                z = i;
             }
         }
         for (int j = z + 1; j < n; j++)

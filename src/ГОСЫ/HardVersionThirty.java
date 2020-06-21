@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.abs;
 
-public class HardVersionOne {
+public class HardVersionThirty {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -51,23 +51,25 @@ public class HardVersionOne {
     //часть кода для решения задачи
     public static void decision(int arrayForNumber[]) {
         int min = abs(arrayForNumber[0]);
-        int arrayElement=0;
-        int minIndexElement =0;
+        int arrayElement = 0;
+        int minIndexElement = 0;
         for (int step = 0; step < arrayForNumber.length; step++) {
-            arrayElement+=1;
+            arrayElement += 1;
             if (abs(arrayForNumber[step]) < min) {
-                minIndexElement =arrayElement;
+                minIndexElement = arrayElement;
             }
         }
         result(minIndexElement, arrayForNumber);
 
     }
 
-            public static void result(int minIndexElement, int arrayForNumber[]) {
-        int sum=0;
-                for(int step = minIndexElement; step<arrayForNumber.length; step++){
-                  sum+=arrayForNumber[step];
-                }
-                System.out.println("Сумма равна = "+sum + "    Начиная с элемента " +arrayForNumber[minIndexElement]);
+    public static void result(int minIndexElement, int arrayForNumber[]) {
+        int sum = 0;
+        if (minIndexElement != 0) {
+            for (int step = minIndexElement; step < arrayForNumber.length; step++) {
+                sum += arrayForNumber[step];
             }
+            System.out.println("Сумма равна = " + sum + "\nНачиная с элемента " + arrayForNumber[minIndexElement]);
+        } else System.out.println("Элементы массива одинаковые");
+    }
 }

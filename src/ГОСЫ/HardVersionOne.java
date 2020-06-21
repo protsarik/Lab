@@ -2,75 +2,72 @@ package ГОСЫ;
 
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class HardVersionOne {
-        static Scanner in = new Scanner(System.in);
+    static Scanner in = new Scanner(System.in);
 
-        public static void main(String[] args) {
-            int sizeOfArray = enter();
-            int[] arrayForNumber = new int[sizeOfArray];
-            input(arrayForNumber);
-            output(arrayForNumber);
-            comparison(arrayForNumber);
+    public static void main(String[] args) {
+        int sizeOfArray = enter();
+        int[] arrayForNumber = new int[sizeOfArray];
+        input(arrayForNumber);
+        output(arrayForNumber);
+        decision(arrayForNumber);
+    }
+
+    //часть кода предназначенная для заполнения массива
+    public static int enter() {
+        int sizeOfArray;
+        do {
+            System.out.println("Введи размер масива(положительное число):");
+            while (!in.hasNextInt()) {
+                System.out.println("Это не число!!!");
+                in.next();
+            }
+            sizeOfArray = in.nextInt();
+        } while (sizeOfArray <= 0);
+        return sizeOfArray;
+    }
+
+    public static void input(int arrayForNumber[]) {
+        System.out.println("Введи элементы массива");
+        for (int i = 0; i < arrayForNumber.length; i++) {
+            while (!in.hasNextInt()) {
+                System.out.println("Это не число!!!");
+                in.next();
+            }
+            arrayForNumber[i] = in.nextInt();
         }
+    }
 
-        //часть кода предназначенная для заполнения массива
-        public static int enter() {
-            int sizeOfArray;
-            do {
-                System.out.println("Введи размер масива(положительное число):");
-                while (!in.hasNextInt()) {
-                    System.out.println("Это не число!!!");
-                    in.next();
+    public static void output(int arrayForNumber[]) {
+        System.out.println("Состав массива:");
+        for (int i = 0; i < arrayForNumber.length; i++) {
+            System.out.print(arrayForNumber[i] + "    ");
+        }
+        System.out.println();
+    }
+
+    //часть кода для решения задачи
+    public static void decision(int arrayForNumber[]) {
+        int min = abs(arrayForNumber[0]);
+        int arrayElement=0;
+        int minIndexElement =0;
+        for (int step = 0; step < arrayForNumber.length; step++) {
+            arrayElement+=1;
+            if (abs(arrayForNumber[step]) < min) {
+                minIndexElement =arrayElement;
+            }
+        }
+        result(minIndexElement, arrayForNumber);
+
+    }
+
+            public static void result(int minIndexElement, int arrayForNumber[]) {
+        int sum=0;
+                for(int step = minIndexElement; step<arrayForNumber.length; step++){
+                  sum+=arrayForNumber[step];
                 }
-                sizeOfArray = in.nextInt();
-            } while (sizeOfArray <= 0);
-            return sizeOfArray;
-        }
-
-        public static void output(int arrayForNumber[]) {
-            System.out.println("Состав массива:");
-            for (int i = 0; i < arrayForNumber.length; i++) {
-                System.out.print(arrayForNumber[i] + "    ");
+                System.out.println("Сумма равна = "+sum + "    Начиная с элемента " +arrayForNumber[minIndexElement]);
             }
-            System.out.println();
-        }
-
-        public static void input(int arrayForNumber[]) {
-            System.out.println("Введи элементы массива");
-            for (int i = 0; i < arrayForNumber.length; i++) {
-                while (!in.hasNextInt()) {
-                    System.out.println("Это не число!!!");
-                    in.next();
-                }
-                arrayForNumber[i] = in.nextInt();
-            }
-        }
-
-        //часть кода для решения задачи
-        public static void comparison(int arrayForNumber[]) {
-            int k = 0;
-            for (int step = 0; step < arrayForNumber.length; step++) {
-//            if (arrayForNumber[step] >= k) {
-//                valueArray[k] = arrayForNumber[step];
-//                numberElement[k] = step + 1;
-//                k = k + 1;
-//            }
-//            if (k > 2) {
-//                break;
-//            }
-//        }
-//        result(k, valueArray, numberElement);
-
-            }
-
-//            public static void result(int k, int valueArray[], int numberElement[]) {
-//                if (k == 3) {
-//                    for (int step = 0; step < 3; step++) {
-//                        System.out.println("value=" + valueArray[step] + "\t number" + numberElement[step]);
-//                    }
-//                } else if (k == 0) {
-//                    System.out.println("не найдены");
-//                } else System.out.println("меньше трех элементов");
-//            }
-        }
 }
